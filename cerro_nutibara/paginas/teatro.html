@@ -3,15 +3,33 @@
 <head>
 	<title>Teatro Carlos Vieco</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 	<link rel="shortcut icon" href="../favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
-	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+	<meta property="og:url"           content="https://andredaza338.github.io/nutibara/cerro/paginas/teatro.html" />
+	<meta property="og:type"          content="Teatro Carlos Vieco" />
+	<meta property="og:title"         content="Teatro Carlos Vieco" />
+	<meta property="og:description"   content="Éste Teatro al aire libre fué el epicentro de los rockeros paisas, donde crecieron de la mano de artístas locales que expresaban sus versos en este histórico lugar, que hoy por hoy está en profundo abandono" />
+	<meta property="og:image"         content="https://andredaza338.github.io/nutibara/cerro/imagenes/pueblitopaisa.jpg" />
 </head>
 
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <nav id="botonescabeza">
+	<div id="buscadorheader">
+		<a href="https://www.facebook.com" target="blank"><img id="facebook" src="../imagenes/logo_facebook.png"></a> 
+		<input type="text" name="buscador"><span class="icon icon-search"></span>
+	</div>
 	<div class="hamburger">
 		<div class="_layer -top"></div>
 		<div class="_layer -mid"></div>
@@ -37,8 +55,11 @@
 
 
 <section id="video">
-	
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/0HJ2OCRBg5I" frameborder="0" allowfullscreen></iframe>
+	<!--<video width="560" height="315" controls>
+	  	 <source src="../videos/El_teatro_Carlos_Vieco.mp4" type="video/mp4">
+	</video>-->
+	<iframe src="https://player.vimeo.com/video/217777896" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/0HJ2OCRBg5I" frameborder="0" allowfullscreen></iframe> -->
 </section>
 
 <aside id="asideteatro">
@@ -48,6 +69,7 @@
 <h2 id="parrafoteatro">
 	Éste Teatro al aire libre fué el epicentro de los rockeros paisas, donde crecieron de la mano de artístas locales que expresaban sus versos en este histórico lugar, que hoy por hoy está en profundo abandono por parte de los entes gubernamentales encargados de éste. <br> 
 	Por los reclamos de estos fanáticos y artístas del género rock la Alcaldía de Medellín evalúa la mejoras que necesita este lugar para abrir sus puertas a este espacio cultural y memorable de la ciudad.
+	<div class="fb-share-button" data-href="https://andredaza338.github.io/nutibara/cerro/paginas/teatro.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fandredaza338.github.io%2Fnutibara%2Fcerro%2Fpaginas%2Fteatro.html&amp;src=sdkpreparse">Compartir</a></div>
 </h2>
 
 <footer>
@@ -66,12 +88,14 @@
 
 <p id="direccion">Calle 30a N° 55-64 <br>PBX: 2358370 <br> @cerronutibara</p> 
 
-<img id="lupa" src="../imagenes/lupa.png">
+<!-- <img  id="lupa" src="../imagenes/lupa.png"> -->
+<div id="buscadorfooter">
+	<input type="text" name="buscdorfooter"><span class="icon icon-search"></span>
+</div>
 
 </footer>
 
 <script language="JavaScript" type="text/javascript">
-function clockjs(){if(document.layers||document.all||document.getElementById){var c=new Date,e=c.getHours(),o=c.getMinutes(),t=c.getSeconds(),n="PM";12>e&&(n="AM"),e>12&&(e-=12),0==e&&(e=12),9>=o&&(o="0"+o),9>=t&&(t="0"+t),myclock=e+":"+o+":"+t+" "+n,document.layers?(document.layers.clockjavascript.document.write(myclock),document.layers.clockjavascript.document.close()):document.all?clockjavascript.innerHTML=myclock:document.getElementById&&(document.getElementById("clockjavascript").innerHTML=myclock),setTimeout("clockjs()",1e3)}}window.onload=clockjs;
 
 // selector
 var menu = document.querySelector('.hamburger');
